@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reserva tu mesa | Fogón Latino</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+
+background:#f5f5f5;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+min-height:100vh;
+
+padding:30px;
+
+}
+
+.contenedor{
+
+width:100%;
+max-width:700px;
+
+background:white;
+
+border-radius:20px;
+
+padding:40px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+}
+
+h1{
+
+text-align:center;
+color:#8B4513;
+margin-bottom:10px;
+
+}
+
+p{
+
+text-align:center;
+color:#666;
+margin-bottom:35px;
+
+}
+
+label{
+
+font-weight:600;
+display:block;
+margin-bottom:8px;
+
+margin-top:18px;
+
+}
+
+input,
+select{
+
+width:100%;
+padding:13px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+font-size:15px;
+
+}
+
+.botones{
+
+margin-top:35px;
+
+display:flex;
+
+justify-content:space-between;
+
+gap:15px;
+
+}
+
+button{
+
+flex:1;
+
+padding:15px;
+
+border:none;
+
+border-radius:10px;
+
+font-size:16px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.enviar{
+
+background:#8B4513;
+color:white;
+
+}
+
+.enviar:hover{
+
+background:#6f3510;
+
+}
+
+.volver{
+
+background:#d9d9d9;
+
+}
+
+.volver:hover{
+
+background:#c4c4c4;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>Reserva tu Mesa</h1>
+
+<p>Completa el siguiente formulario para reservar tu experiencia en Fogón Latino.</p>
+
+<form>
+
+<label>Nombre</label>
+<input type="text" required>
+
+<label>Apellidos</label>
+<input type="text" required>
+
+<label>Fecha de nacimiento</label>
+<input type="date" required>
+
+<label>Número de celular</label>
+<input type="tel" required>
+
+<label>Correo electrónico</label>
+<input type="email" required>
+
+<label>Fecha de la reserva</label>
+<input type="date" required>
+
+<label>Motivo de la reserva</label>
+
+<select required>
+
+<option>Cumpleaños</option>
+
+<option>Cena romántica</option>
+
+<option>Reunión familiar</option>
+
+<option>Aniversario</option>
+
+<option>Celebración especial</option>
+
+<option>Reunión de trabajo</option>
+
+<option>Otro</option>
+
+</select>
+
+<label>Número de personas</label>
+
+<input type="number" min="1" max="30" required>
+
+<div class="botones">
+
+<button class="enviar">
+
+Confirmar Reserva
+
+</button>
+
+<button
+
+type="button"
+
+class="volver"
+
+onclick="window.location.href='https://TU-SITIO-JIMDO.jimdosite.com/'">
+
+Volver al sitio web
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
